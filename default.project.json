@@ -7,7 +7,7 @@
 			"$className": "ReplicatedStorage",
 
 			"RobloxDevToolkit": {
-				"$path": "."
+				"$path": "src"
 			}
 		}
 	}
