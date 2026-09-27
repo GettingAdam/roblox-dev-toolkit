@@ -1,0 +1,14 @@
+{
+	"name": "RobloxDevToolkit",
+	"tree": {
+		"$className": "DataModel",
+
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+
+			"RobloxDevToolkit": {
+				"$path": "src"
+			}
+		}
+	}
+}
