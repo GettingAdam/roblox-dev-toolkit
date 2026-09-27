@@ -10,6 +10,10 @@ return function()
 			assert(FormatNumber.format(2000000) == "2.0M")
 		end)
 
+		it("supports custom decimal precision", function()
+			assert(FormatNumber.format(1500, 2) == "1.50K")
+		end)
+
 		it("keeps small numbers unchanged", function()
 			assert(FormatNumber.format(500) == "500")
 		end)
