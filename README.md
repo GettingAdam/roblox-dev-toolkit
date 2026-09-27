@@ -1,45 +1,29 @@
 # Roblox Dev Toolkit
 
-A collection of reusable Roblox development utilities written in Luau.
+A collection of reusable Roblox development utilities and systems written in Luau.
 
-The goal of this project is to provide simple, well-documented modules that Roblox developers can reuse in their own games.
+The goal of Roblox Dev Toolkit is to provide simple, focused modules that Roblox developers can reuse across different experiences without unnecessary dependencies.
 
 ## Features
 
 ### Utilities
 
-* **FormatNumber** — Formats large numbers using K, M, and B notation.
-* **Cooldown** — Simple reusable cooldown system for gameplay actions.
+- **Cooldown** — Manage timed gameplay actions.
+- **FormatNumber** — Format large numbers using K, M, and B notation.
+- **Maid** — Track and clean up connections, instances, functions, and cleanup objects.
+- **RateLimiter** — Limit requests within a configurable time window.
+- **Signal** — Lightweight custom event system.
+- **TableUtils** — Common table operations such as cloning, searching, and checking values.
+
+### Services
+
+- **DataStore** — Simple DataStore wrapper with retries and `UpdateAsync` support.
 
 ## Installation
 
-Copy the required module into your Roblox Studio project and require it from your script.
+### Rojo
 
-Example:
+Clone the repository and build the project with Rojo:
 
-```lua
-local FormatNumber = require(path.to.FormatNumber)
-
-print(FormatNumber.format(1500))
--- 1.5K
-```
-
-## Project Structure
-
-```text
-src/
-├── Utilities/
-│   ├── FormatNumber.luau
-│   └── Cooldown.luau
-└── README.md
-```
-
-## Development
-
-This project is actively being developed. More reusable Roblox systems will be added over time.
-
-Contributions, bug reports, and suggestions are welcome.
-
-## License
-
-MIT License
+```bash
+rojo build default.project.json --output RobloxDevToolkit.rbxl
